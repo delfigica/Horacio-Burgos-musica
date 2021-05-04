@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.header-normal {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+}
+.header-text {
+  margin: auto 50px;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+}
+.header-img {
+  max-width: 850px;
+  max-height: 450px;
+  display: flex;
+  object-fit: cover;
+  align-content: center;
+  margin: auto 10px;
+  padding: 5px;
+  border: 2px solid black;
+}
+img {
+  width: 100%;
+}
+.header-responsive {
+    display: none;
+}
+.header-img-responsive {
+    max-width: 350px;
+    display: flex;
+    object-fit: cover;
+    align-content: center;
+    margin: 20px auto;
+    padding: 5px;
+    border: 2px solid black;
+}
+.header-text-responsive {
+    margin: 20px;
+}
+.navbar-brand a {
+  justify-content: left;
+}
+.nav-link {
+  color: white;
+}
+.nav-item {
+  color: white;
+  margin: 0px 15px;
+}
+.nav-responsive {
+  display: none;
+}
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+.carousel-inner {
+  height: 100%;
+}
+.carousel {
+  margin: 30px auto;
+  width: 500px;
+  height: 500px;
+}
+p {
+  font-size: 1.2em;
+}
+#footer {
+  color: white;
+  padding: 20px;
+}
+.container-redes {
+  display: flex;
+  margin-top: 20px;
+  align-content: center;
+}
+.ul-footer {
+  list-style: none;
+  display: flex;
+  padding-left: 5px;
+}
+.i-footer {
+  color: white;
+  font-size: 30px;
+  margin: 0px 10px;
+}
+.p-footer {
+  font-size: 1.3em;
+}
+.delfi {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  align-content: center;
+}
+.a-delfi,
+.h6-delfi {
+  margin-left: 10px;
+  font-size: 1.3em;
+}
+.p-delfi {
+  font-size: 1.6em;
+}
+@media only screen and (max-width: 850px) {
+ .header-normal {
+     display: none;
+}
+.header-responsive {
+    display: block;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+html {
+    width: 90vh;
+}
+
+  .nav-responsive {
+    display: block;
+    width: 90vh;
+  }
+  .nav-normal {
+    display: none;
+  }
+  .container {
+    width: 80vh;
+    margin-left: 40px;
+  }
+  iframe {
+    width: 400px;
+  }
+  #footer {
+    width: 90vh;
+    height: 300px;
+  }
+  .carousel {
+    margin: 20px auto;
+  }
+}

@@ -1,62 +1,68 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-
-.header-normal {
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-content: center;
-}
-.header-text {
-  margin: auto 50px;
-  justify-content: center;
-  text-align: center;
-  white-space: nowrap;
-}
-.header-img {
-  max-width: 850px;
-  max-height: 450px;
-  display: flex;
-  object-fit: cover;
-  align-content: center;
-  margin: auto 10px;
-  padding: 5px;
-  border: 2px solid black;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 img {
+    width: 100%;
+}
+
+.container-fluid-slider {
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.container-img {
+  max-width: 450px;
+  max-height: auto;
+}
+.container-img img {
   width: 100%;
 }
-.header-responsive {
-    display: none;
+.fa-angle-down {
+  font-size: 45px;
+  transition: margin 0.4s;
 }
-.header-img-responsive {
-    max-width: 350px;
-    display: flex;
-    object-fit: cover;
-    align-content: center;
-    margin: 20px auto;
-    padding: 5px;
-    border: 2px solid black;
+.fa-angle-down:hover {
+  margin-top: 20px;
 }
-.header-text-responsive {
-    margin: 20px;
+#ico-slider {
+    color: #fff;
 }
-.navbar-brand a {
-  justify-content: left;
+.text-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-normal {
+  background-color: #000;
+}
+.navbar-brand {
+  color: white;
+  align-items: center;
+  margin: 0;
 }
 .nav-link {
-  color: white;
+  color: #fff;
+  transition: background-color 200ms ease, color 200ms ease;
 }
-.nav-item {
-  color: white;
-  margin: 0px 15px;
+.nav-link:hover {
+  background-color: #fff;
+  color: rgb(0, 0, 0);
 }
-.nav-responsive {
-  display: none;
+.sobre-el-texto {
+  width: 40%;
+  text-align: justify;
+  margin: 20px;
+}
+.container-fluid {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 .carousel-inner img {
   width: 100%;
@@ -70,79 +76,196 @@ img {
   width: 500px;
   height: 500px;
 }
-p {
-  font-size: 1.2em;
+#discos {
+    background-color: #000;
+    color: white;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
 }
-#footer {
-  color: white;
-  padding: 20px;
+.spotify-reproductores {
+    width: 50%;
+    flex-wrap: wrap;
 }
-.container-redes {
-  display: flex;
-  margin-top: 20px;
-  align-content: center;
+.spotify-reproductores iframe {
+    margin: 5px;
 }
-.ul-footer {
-  list-style: none;
-  display: flex;
-  padding-left: 5px;
-}
-.i-footer {
-  color: white;
-  font-size: 30px;
-  margin: 0px 10px;
-}
-.p-footer {
-  font-size: 1.3em;
-}
-.delfi {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  align-content: center;
-}
-.a-delfi,
-.h6-delfi {
-  margin-left: 10px;
-  font-size: 1.3em;
-}
-.p-delfi {
-  font-size: 1.6em;
-}
-@media only screen and (max-width: 850px) {
- .header-normal {
-     display: none;
-}
-.header-responsive {
-    display: block;
+#proyectos {
+    display: flex;
     flex-direction: column;
-    margin: auto;
-    text-align: center;
+    width: 70%;
+    text-align: justify;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.title {
+    margin: 20px 0px;
+}
+#actividad-medios-negro {
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+}
+#actividad-medios-blanco {
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
 }
-html {
-    width: 90vh;
+.a-videos {
+    color: #fff;
+}
+.a-videos-negro {
+    color: black;
+}
+.black-title, .white-title {
+    font-size: 25px;
+    font-weight: 600;
+}
+#canal-youtube {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#clases-guitarra {
+    background-color: #000000;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.yellow-title {
+    font-size: 2.5em;
+    margin: 40px auto;
+    color: rgb(255, 255, 255);
+}
+.contenedor-img-clases {
+    max-width: 400px;
+    height: auto;
+}
+.container-clases-guitarra {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
-  .nav-responsive {
-    display: block;
-    width: 90vh;
-  }
-  .nav-normal {
-    display: none;
-  }
-  .container {
-    width: 80vh;
-    margin-left: 40px;
-  }
-  iframe {
-    width: 400px;
-  }
-  #footer {
-    width: 90vh;
-    height: 300px;
-  }
-  .carousel {
-    margin: 20px auto;
-  }
+.ul-clases {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-evenly;
+
+}
+.li-clases {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+.contacto-clases {
+    display: flex;
+    align-content: center;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 20px 0px;
+}
+.p-contact, .a-clases {
+    color: #fff;
+}
+ 
+#contacto {
+    margin-top: 15px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.fab, #i-contact {
+    font-size: 45px;
+    margin: 0px 20px;
+    color: black;
+}
+
+.fas {
+    color: #fff;
+    font-size: 45px;
+    margin: 0px 20px;
+}
+.container{
+    width: 30%;
+}
+.title-contact {
+    font-size: 2.5em;
+}
+.a-contact {
+    color: black;
+
+}
+#delfi {
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+.a-delfi {
+    color: white;
+}
+@media only screen and (max-width: 850px) {
+    .nav-normal {
+        display: none;
+    }
+    .container-fluid {
+    flex-wrap: wrap;
+    width: 100%;
+    }
+    #discos {
+        margin: 5px 0px;
+    }
+    .sobre-el-texto {
+        width: 100%;
+    }
+    h1{
+        font-size: 2em;
+    }
+    .spotify-reproductores {
+        width: 100%;
+        margin: 0px 5px;
+    }
+    h2 {
+        font-size: 1.9em;
+    }
+    #proyectos {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+    .fab, .fas, #i-contact {
+        font-size: 35px;
+        margin: 0px 10px;
+    }
+    #actividad-medios-negro, #actividad-medios-blanco {
+        align-content: flex-start;
+        margin-top: 20px;
+    }
+    .yellow-title {
+        font-size: 2em;
+        margin: 10px 0px;
+    }
+    .container-clases-guitarra {
+        flex-wrap: wrap;
+    }
+    .ul-clases {
+        margin: 5px 0px;
+    }
+    .li-clases {
+        font-size: 1em;
+    }
+    .contacto-clases {
+        flex-direction: column;
+    }
+    #delfi {
+        height: 10px;
+    }
+    #canal-youtube {
+        margin: 10px 0px;
+    }
+    .video-youtube iframe {
+        width: 310px;
+        height: auto;
+    }
 }

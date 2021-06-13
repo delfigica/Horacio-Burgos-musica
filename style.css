@@ -223,7 +223,10 @@ img {
     }
     .spotify-reproductores {
         width: 100%;
-        margin: 0px 5px;
+        justify-content: center;
+    }
+    .spotify-reproductores iframe {
+        width: 100%;
     }
     h2 {
         font-size: 1.9em;
